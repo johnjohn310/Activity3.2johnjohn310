@@ -170,3 +170,10 @@ WHERE hero_id = 1;
 -- Deleting items associated with Hero 1
 DELETE FROM HeroItem 
 WHERE hero_id = 1;
+
+--6	Create new branch named "feat/select-heroes-archers"
+
+-- List of hero/es classified as archers
+SELECT DISTINCT Hero.hero_name
+FROM Hero
+WHERE class_id IN (104,105);
